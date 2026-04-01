@@ -28,12 +28,3 @@ No terminal:
 cd "c:\\Users\\joilt\\OneDrive\\Desktop\\DIO.me\\Formação Lógica de Programação\\Nova pasta"
 node index.js
 ```
-
-## Git
-
-Para adicionar o arquivo no commit:
-
-```bash
-git add .
-git commit -m "Adiciona README e implementação da calculadora de rankeadas"
-```
