@@ -1,39 +1,51 @@
-# Calculadora de Rankeadas (Nivel de Herói)
+# Desafio: Escrevendo as classes de um Jogo
 
-Pequeno projeto em JavaScript para calcular o nível de um jogador com base no saldo de vitórias e derrotas.
+Este projeto foi desenvolvido em JavaScript como parte do desafio da DIO sobre classes e objetos.
 
-## Como funciona
+## Objetivo
+Criar uma classe genérica que represente um herói de uma aventura com as propriedades:
+- nome
+- idade
+- tipo
 
-- Entrada: número de vitórias e número de derrotas.
-- Cálculo: `saldo = vitórias - derrotas`.
-- Classeção:
-  - `saldo < -1` → Noob
-  - `saldo < 10` → Ferro
-  - `saldo <= 20` → Bronze
-  - `saldo <= 50` → Prata
-  - `saldo <= 80` → Ouro
-  - `saldo <= 90` → Diamante
-  - `saldo <= 100` → Lendário
-  - `saldo > 100` → Imortal
+Além disso, a classe deve possuir um método `atacar()` que exibe a mensagem conforme o tipo do herói.
 
-## Arquivo principal
+## Tecnologias e conceitos usados
+- Variáveis
+- Operadores
+- Estruturas de decisão
+- Funções
+- Classes e objetos
 
-- `index.js` contém a função `nivelDeHeroi(vitorias, derrotas)` e um exemplo de uso.
+## Estrutura do projeto
+- `desafio-heroi.js`: código principal com a classe `Heroi` e o método `atacar()`.
 
-## Executar
+## Lógica aplicada
+O método `atacar()` usa uma estrutura `switch` para verificar o tipo do herói e definir o ataque correspondente:
+- mago -> magia
+- guerreiro -> espada
+- monge -> artes marciais
+- ninja -> shuriken
 
-No terminal:
-
-```bash
-cd "c:\\Users\\joilt\\OneDrive\\Desktop\\DIO.me\\Formação Lógica de Programação\\Nova pasta"
-node index.js
-```
-
-## Git
-
-Para adicionar o arquivo no commit:
+Depois disso, o programa exibe a mensagem no formato:
 
 ```bash
-git add .
-git commit -m "Adiciona README e implementação da calculadora de rankeadas"
+o {tipo} atacou usando {ataque}
 ```
+
+## Exemplo de saída
+```bash
+o guerreiro atacou usando espada
+```
+
+## Como executar
+1. Tenha o Node.js instalado.
+2. Baixe ou clone este repositório.
+3. Execute no terminal:
+
+```bash
+node desafio-heroi.js
+```
+
+## Autor
+Projeto desenvolvido para fins de estudo e prática em lógica de programação com JavaScript.
